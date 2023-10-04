@@ -19,6 +19,7 @@ class BatteryBloc extends Bloc<BatteryEvent, BatteryState> {
             battery = await platform.invokeMethod('getBatteryLevel') as int;
           } catch (e) {
             battery = 0;
+            log(e.toString());
           }
           return BatteryState.data(battery);
         },
