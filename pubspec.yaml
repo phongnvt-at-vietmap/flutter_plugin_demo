@@ -53,6 +53,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  plugin:
+    platforms:
+    # This plugin project was generated without specifying any
+    # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
+    # then add platforms following the instruction here:
+    # https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms
+    # -------------------
+      ios:
+        pluginClass: AppDelegate
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
